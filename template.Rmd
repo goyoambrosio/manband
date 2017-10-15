@@ -1,0 +1,129 @@
+---
+# index.Rmd goyo rev.2 13.10.16 */
+title       : Cómo gestionar de tareas cuando se es un hombre orquesta
+subtitle    : Conceptos, metodología y herramientas
+author      : Goyo Ambrosio 
+job         : Málaga `r format(Sys.time(), "%d %b %Y")`
+logo        : logo_promalaga.png
+biglogo     : goyologo.png 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax, quiz, bootstrap]
+mode        : selfcontained # {standalone, draft}
+license     : by-nc-sa
+knit        : slidify::knit2slides
+---
+
+--- .class #id bg:url(assets/img/portada_promalaga.png)
+
+## Slide 1 with custom background
+
+--- #custbg
+
+## Slide 2 with custom background
+
+<style>
+#custbg {
+  background-image:url(assets/img/portada_promalaga.png); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+</style>
+
+--- .dark .nobackground 
+
+<q>Slide con frase centrada a la que se puede añadir comillas y notas del ponente</q>
+
+*** =pnotes
+
+Layouts allow a clean separation of content from design, thereby allowing the same markdown document to be rendered using multiple HTML5 frameworks. The best way to understand layouts is to follow a slide through slidify
+
+--- .segue .dark
+
+## Sección
+
+--- .segue bg:indigo
+
+## Sección con fondo de color
+
+--- .centrepre &vcenter .bigger 
+
+## Mensaje en esquina
+
+<a class='example'>Your Turn</a>
+
+--- .segue .dark .nobackground .quote
+
+<q> Frase en la que se puede __resaltar__ una palabra.</q>
+
+---
+    
+## Tabla
+
+| **Variable**    | **Description**                       |
+|-----------------|---------------------------------------|
+| `slide.title`   | The title of the slide with no markup |
+| `slide.header`  | The title of the slide with markup    |
+| `slide.level`   | The title header level (h1 - h6)      |
+| `slide.content` | The contents of the slide sans header |
+| `slide.html`    | The contents of the slide with header |
+| `slide.num`     | The number of the slide               |
+| `slide.id`      | The id assigned to the slide          |
+| `slide.class`   | The class assigned to the slide       |
+| `slide.bg`      | The background assigned to the slide  |
+| `slide.myblock`   | The slide block named myblock       |
+| `slide.blocks`  | The slide blocks which are not named  |
+| `slide.rendered`| The rendered slide                    |
+
+--- .centrepre .bigger
+
+## Slide
+
+    --- {class: class1, bg: Yellow, id: id1}
+    
+    ## Slide Title
+    
+    Slide Contents
+
+--- {class: class1, bg: Yellow, id: id1}
+
+## Slide 1 
+
+1. Edit YAML front matter
+2. Write using R Markdown
+3. Use an empty line followed by three dashes to separate slides!
+
+--- .class #id 
+
+## Slide 2
+
+1. Edit YAML front matter
+2. Write using R Markdown
+3. Use an empty line followed by three dashes to separate slides!
+
+--- .dark 
+
+## Slide 3
+
+1. Edit YAML front matter
+2. Write using R Markdown
+3. Use an empty line followed by three dashes to separate slides!
+
+---
+
+## Properties
+
+Slide properties are key-value pairs that are passed to the layout. You can specify class,
+id and bg and style the slide, either by using built in classes, or specifying additional css.
+
+    --- {class: [class1, class2], id: id}
+
+You can also use symbolic css style prefixes for frequently used properties. For instance, a dot indicates class, a hash refers to id and an ampersand identifies a layout.
+
+    --- .class1 .class2 #id
+    
+Or
+
+    --- .class #id 

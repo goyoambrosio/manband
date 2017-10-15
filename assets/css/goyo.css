@@ -1,0 +1,113 @@
+/* goyo.css rev.1 15.09.16 */
+
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text);
+
+slides > slide.dark {
+  background: SteelBlue !important;
+}
+
+
+slide.dark li{
+    color: PapayaWhip !important;
+}
+
+slide.dark h2{
+  color: white !important;
+}
+
+slide:not(.dark)  h2{
+  color: SteelBlue;
+}
+
+slide.segue p{
+    color: WhiteSmoke;
+}
+
+/*
+slide:not(.segue) p{
+    color: green;
+}
+*/
+
+slide.segue h2{
+ font-family: "Open Sans Condensed";
+ font-weight: 700;
+}
+
+slide:not(.segue)  h2{
+ font-family: "Open Sans Condensed";
+ font-weight: 700;
+ color: SteelBlue;
+}
+
+slide.quote strong {
+  color: red;
+  font-family: "Crimson Text";
+  /* font-size: 1.5em; */
+}
+
+/*
+slide.quote q {
+  font-size: 48px;
+  line-height: 1.5em;
+}
+*/
+
+slide.bigger pre {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+slide.smaller pre{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+slide.dark q {
+  color: whitesmoke;
+}
+
+li.tab::before{
+  content: ""
+}
+
+slide.centrepre pre{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+slide.centrepre code {
+  font-size: 22px;
+}
+
+#demo1-create pre{
+  width: 90%;
+}
+
+#demo1-create code{
+  font-size: 18px;
+  line-height: 28px;
+}
+
+slides.layout-widescreen > slide.backdrop{
+  background: white;
+}
+
+#interactive-quiz pre{
+  line-height: 1.2em;
+}
+
+.title-slide {
+  background-color: SteelBlue; /* #EDE0CF; ; #CA9F9D*/
+}
+
+.title-slide hgroup > h1{
+ font-family: 'Oswald', 'Helvetica', sanserif; 
+}
+
+.title-slide hgroup > h1, 
+.title-slide hgroup > h2 {
+  color: whitesmoke ;  /* ; #EF5150*/
+}
+
