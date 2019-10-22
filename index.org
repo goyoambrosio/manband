@@ -121,7 +121,7 @@
 #+REVEAL_ROOT: ./reveal.js
 #+OPTIONS: reveal_single_file:nil
 #+REVEAL_EXTRA_CSS: ./assets/css/goyo.css
-#+REVEAL_SLIDE_FOOTER: <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p>
+#+REVEAL_SLIDE_FOOTER: <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Gregorio Ambrosio </p>
 *** ioslide
 
 #+COMPANY: Goyo AC
@@ -675,10 +675,10 @@ a través de su división en fragmentos.
 #+END_QUOTE
 
 - Web: http://goyoambrosio.com
-- linkedin: [[https://www.linkedin.com/in/goyoambrosio/]]
+- LinkedIn: [[https://www.linkedin.com/in/goyoambrosio/]]
 
 Realizado con [[https://www.gnu.org/software/emacs/][Emacs]] + [[https://github.com/yjwen/org-reveal][org-reveal]] + [[https://revealjs.com][Reveal.js]] por Gregorio Ambrosio (Goyo AC)
 
-
+- Puedes volver a consultar esta presentación en http://goyoambrosio.com/manband
 
 
