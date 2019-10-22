@@ -133,8 +133,11 @@
 #+ICON: assets/img/goyologo_circle.png
 #+HASHTAG: gambrosio
 
-
-* ¿Qué pretendemos en esta presentación? 
+* Introducción
+:PROPERTIES:
+:reveal_background: #123456
+:END:
+** ¿Qué pretendemos en esta presentación? 
 
 #+BEGIN_QUOTE
 Aprender a gestionar con la máxima eficiencia un número elevado de tareas
@@ -145,7 +148,7 @@ disminuyendo el estrés que genera esa actividad.
 - En el entorno personal
 - En entornos profesionales adecuados (gestión de incidencias, soporte, etc.)
 
-* ¿Qué es el método ManBand?
+** ¿Qué es el método ManBand?
 #+BEGIN_QUOTE
 Es una forma eficiente de gestionar un gran número de tareas no relacionadas
 mediante la utilización conjunta de metodologías y conceptos reconocidos de
@@ -153,7 +156,7 @@ forma coherente y estructurada.
 #+END_QUOTE
 #+REVEAL_HTML: <img class="stretch" src="assets/img/hombre_manband.jpg">
 
-* ¿Qué necesitamos?
+** ¿Qué necesitamos?
 - Definir tareas
 - Emplear metodologías para gestionarlas
 - Aplicar un sistema de clasificación
