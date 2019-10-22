@@ -117,8 +117,8 @@
 #+REVEAL_HEAD_PREAMBLE: <meta name="Gestión de tareas con metodología GTD, kanban, una ontología y Trello como aplicación" content="Gestión de tareas">
 #+REVEAL_POSTAMBLE: <p> Created by Gregorio Ambrosio. </p>
 #+REVEAL_HLEVEL: 1
-#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.8.0
-# #+REVEAL_ROOT: ./reveal.js
+# #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.8.0
+#+REVEAL_ROOT: ./reveal.js
 #+OPTIONS: reveal_single_file:nil
 #+REVEAL_EXTRA_CSS: ./assets/css/goyo.css
 #+REVEAL_SLIDE_FOOTER: <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p>
