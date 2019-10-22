@@ -1,280 +1,1002 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Cómo gestionar de tareas cuando se es un hombre orquesta</title>
-  <meta charset="utf-8">
-  <meta name="description" content="Cómo gestionar de tareas cuando se es un hombre orquesta">
-  <meta name="author" content="Goyo Ambrosio">
-  <meta name="generator" content="slidify" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
-  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
-    media="only screen and (max-device-width: 480px)" >
-  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
-  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
-<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
-<link rel=stylesheet href="./assets/css/goyo.css"></link>
-<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+<meta charset="utf-8"/>
+<title>Gestión de tareas como hombre orquesta</title>
+<meta name="author" content="(Gregorio Ambrosio Cestero)"/>
+<meta name="description" content="Gestión de tareas a partir de metodologías GTD, kanban, una taxonomía y trello como aplicación."/>
+<meta name="keywords" content="keywords separated by comma"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
 
-  
-  <!-- Grab CDN jQuery, fall back to local if offline -->
-  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
-  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
-  <script data-main="libraries/frameworks/io2012/js/slides" 
-    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
-  </script>
-  
-  
+<link rel="stylesheet" href="./reveal.js/css/theme/moon.css" id="theme"/>
 
+<link rel="stylesheet" href="./assets/css/goyo.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="Gestión de tareas con metodología GTD, kanban, una ontología y Trello como aplicación" content="Gestión de tareas">
 </head>
-<body style="opacity: 0">
-  <slides class="layout-widescreen">
-    
-    <!-- LOGO SLIDE -->
-      <slide class="nobackground">
-    <article class="flexbox vcenter">
-      <span>
-        <img width='300px' src="assets/img/goyologo.png">
-      </span>
-    </article>
-  </slide>
-    <slide class="title-slide segue nobackground">
-  <aside class="gdbar">
-    <img src="assets/img/goyologo.png">
-  </aside>
-  <hgroup class="auto-fadein">
-    <h1>Cómo gestionar de tareas cuando se es un hombre orquesta</h1>
-    <h2>Conceptos, metodología y herramientas</h2>
-    <p>Goyo Ambrosio<br/>Málaga 15 oct 2017</p>
-  </hgroup>
-  <article></article>  
-  <footer class = 'license'>
-    <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
-    <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
-    </a>
-  </footer>
-</slide>
-    
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Gestión de tareas como hombre orquesta</h1><p class="subtitle">(Método ManBand)</p>
+<h2 class="author">Gregorio Ambrosio Cestero</h2><h2 class="email"><a href="mailto:goyoac@gmail.com">goyoac@gmail.com</a></h2><p class="date">Created: 2019-10-22 mar 12:50</p>
+</section>
+<section>
+<section id="slide-org0ca8e3d">
+<h2 id="org0ca8e3d">¿Qué pretendemos en esta presentación?</h2>
+<blockquote nil>
+<p>
+Aprender a gestionar con la máxima eficiencia un número elevado de tareas
+disminuyendo el estrés que genera esa actividad.
+</p>
+</blockquote>
 
-    <!-- SLIDES -->
-    <slide class="" id="slide-1" style="background:;">
-  <article data-timings="">
-    
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+<img style="background:none; border:none; box-shadow:none;" src="assets/img/separador1.png">
+<ul>
+<li>En el entorno personal</li>
+<li>En entornos profesionales adecuados (gestión de incidencias, soporte, etc.)</li>
 
-<slide class="segue dark" id="slide-2" style="background:;">
-  <hgroup>
-    <h2>Conceptos</h2>
-  </hgroup>
-  <article data-timings="">
-    
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-3" style="background:;">
-  <hgroup>
-    <h2>Tareas</h2>
-  </hgroup>
-  <article data-timings="">
-    <ul>
-<li>Se denomina tarea a la realización de un determinado trabajo o actividad que se lleva a cabo en un <strong>tiempo limitado</strong>.</li>
-<li>Las tareas requieren <strong>tiempo y esfuerzo</strong> por lo que deben desempeñarse con el máximo nivel de eficiencia posible.</li>
-<li>Principalmente, según su origen se clasifican en <strong>voluntarias e impuestas</strong>.</li>
-<li>Otro citerio de clasificación inportante es según su programación pudiendo ser <strong>planificadas o no planificadas</strong>.</li>
-<li>Según quien las realice, las tareas pueden se realizadas <strong>por uno mismo, delegadas o diferidas</strong>.</li>
-<li>Además se pueden clasificar por otros criterios como: <strong>prioridades, contexto, personas y agentes relacionados, localización, tipo actividad, individual o en equipo</strong>, etc.</li>
-<li>Las tareas se pueden dividir en otras subtareas, siempre menos complejas. En procesos complejos las tareas se organizan en <strong>proyectos</strong> en donde se establecen relaciones de dependencia entre ellas mismas y entre ellas y sus responsables.</li>
 </ul>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+</section>
+<section>
+<section id="slide-org2b1dcd9">
+<h2 id="org2b1dcd9">¿Qué es el método ManBand?</h2>
+<blockquote nil>
+<p>
+Es una forma eficiente de gestionar un gran número de tareas no relacionadas
+mediante la utilización conjunta de metodologías y conceptos reconocidos de
+forma coherente y estructurada.
+</p>
+</blockquote>
+<img class="stretch" src="assets/img/hombre_manband.jpg">
 
-<slide class="" id="slide-4" style="background:;">
-  <hgroup>
-    <h2>Gestión de tareas</h2>
-  </hgroup>
-  <article data-timings="">
-    <ul>
-<li>No debemos confundir gestión de tareas con gestión de proyectos</li>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+</section>
+<section>
+<section id="slide-org70d7de8">
+<h2 id="org70d7de8">¿Qué necesitamos?</h2>
+<ul>
+<li>Definir tareas</li>
+<li>Emplear metodologías para gestionarlas</li>
+<li>Aplicar un sistema de clasificación</li>
+
 </ul>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+</section>
+<section>
+<section id="slide-org9a4d075" data-background="#123456">
+<h2 id="org9a4d075">Tareas</h2>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org4b778b8">
+<h3 id="org4b778b8">Definición de tarea</h3>
+<blockquote nil>
+<p>
+"Realización de un determinado trabajo o acción que se lleva a cabo en un
+<b><b>tiempo limitado</b></b> y <i>breve</i> con un fin determinado"
+</p>
+</blockquote>
 
-<slide class="" id="slide-5" style="background:;">
-  <hgroup>
-    <h2>Trabajadores del conocimiento</h2>
-  </hgroup>
-  <article data-timings="">
-    <ul>
-<li>Son aquellos trabajadores cuyo principal capital es el <strong>conocimiento</strong>. Ejemplos representativos son los trabajadores de las TI, periodistas, ingenieros, científicos, médicos, economistas, etc.</li>
-<li>Se diferencian de otros trabajadores que se dedican fundamentalmente a <strong>resolver problemas no rutinarios</strong> que requieren una combinación de pensamiento convergente, divergente y creativo.:
+<aside class="notes">
+<ul>
+<li>La brevedad es relativa pero en todo caso se entiende que no es una acción
+dilatada en el tiempo porque si no sería una <b>actividad</b>.</li>
+<li>El fin o la meta no es un objetivo, puesto que lo objetivos tienen que ser
+cuantificables por definición.</li>
+
+</ul>
+
+</aside>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org0087305">
+<h3 id="org0087305">Algunas consideraciones sobre la tareas</h3>
+<ul>
+<li class="fragment highlight-green">Requieren <b>tiempo y esfuerzo</b> por lo que deben desempeñar con el máximo nivel de
+<b>eficiencia</b>.</li>
+<li class="fragment highlight-green">Se pueden aplicar múltiples criterios de clasificación.</li>
+<li class="fragment highlight-green">No debemos confundirlas con proyectos.</li>
+
+</ul>
+
+<aside class="notes">
+<ul>
+<li>Las tareas requieren <b>tiempo y esfuerzo</b> por lo que deben desempeñarse con el
+máximo nivel de <b>eficiencia</b> posible.</li>
+
+<li>Se pueden clasificar con múltiples criterios:
+<ul>
+<li>Principalmente, según su origen se clasifican en <b>voluntarias e impuestas</b>.</li>
+<li>Otro citerio de clasificación inportante es según su programación pudiendo
+ser <b>planificadas o no planificadas</b>.</li>
+<li>Según quien las realice, las tareas pueden se realizadas <b>por uno mismo,
+delegadas o diferidas</b>.</li>
+<li>Además se pueden clasificar por otros criterios como: prioridades, contexto,
+personas y agentes relacionados, localización, tipo actividad, individual o
+en equipo, etc.</li>
+
+</ul></li>
+<li>Las tareas se pueden dividir en otras subtareas, siempre menos complejas. En
+procesos complejos las tareas se organizan en <b>proyectos</b> en donde se establecen
+relaciones de dependencia entre ellas mismas y entre ellas y sus responsables.</li>
+
+</ul>
+
+</aside>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org87978cc">
+<h3 id="org87978cc">Datos de una tarea</h3>
+<ul>
+<li>Un título breve</li>
+<li>Una descripción u observaciones</li>
+<li>Un marco temporal</li>
+<li>Un cuaderno de bitácora</li>
+<li>Otros datos que consideremos necesarios</li>
+
+</ul>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+</section>
+<section>
+<section id="slide-orgcedc967" data-background="#123456">
+<h2 id="orgcedc967">Metodologías</h2>
+<p>
+Para una gestión eficiente de tareas vamos a usar de forma combinada dos
+metodologías:
+</p>
+<ul>
+<li>El método kanban que aporta simplicidad y visualización.</li>
+<li>El método GTD que aporta organización y productividad.</li>
+
+</ul>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org12a3937">
+<h3 id="org12a3937">Método Kanban</h3>
+<blockquote nil>
+<p>
+Kanban es un método para gestionar el trabajo, aplicable en situaciones donde el
+trabajo llega de forma impredecible y puede ser ejecutado tan pronto como llega
+sin depender de otros trabajos.
+</p>
+</blockquote>
+<ul>
+<li>Kanban surgió en Toyota Production System (TPS).</li>
+
+<li>El término "kanban" es japonés (看板) y significa <b>tablero visual</b>.</li>
+
+<li>Se basa en tres principios:
+<ul>
+<li>Visualización de todo el trabajo de forma global.</li>
+<li>Limitación del volumen de trabajo en proceso.</li>
+<li>Mejora del flujo de trabajo.</li>
+
+</ul></li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org1df08e9">
+<h4 id="org1df08e9">El tablero kanban</h4>
+<blockquote nil>
+<p>
+"El tablero kanban es la herramienta central del método de gestión de tareas kanban"
+</p>
+</blockquote>
+
+<div class="figure">
+<p><img src="assets/img/kanban-board-toyota.png" alt="kanban-board-toyota.png" />
+</p>
+</div>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org886edef">
+<h4 id="org886edef">Estructura de un tablero kanban</h4>
+<ul>
+<li>El tablero se organiza en <span class="underline"><b>columnas</b> que representan <b>fases del proceso del
+trabajo</b></span> y filas que representan tipos de actividades como diseño, errores,
+etc.</li>
+
+<li>En cada columna se disponen <span class="underline"><b>tarjetas</b> que representan <b>tareas</b></span>.</li>
+
+<li>Cada tarjeta contienen información relativa a la tarea.</li>
+
+<li>Las tarjetas se van moviendo entre columnas siguiendo las fases del flujo de
+trabajo.</li>
+
+<li>El tablero básico dispone de tres columnas que representan a las tres fases
+indispensables en el flujo de una tarea: <b>por hacer</b>, <b>en proceso</b> y <b>hecho</b>.</li>
+
+</ul>
+
+
+<div class="figure">
+<p><img src="assets/img/Kanban_simple.png" alt="Kanban_simple.png" />
+</p>
+</div>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org299d55d">
+<h4 id="org299d55d">Flujo de trabajo en el tablero kanban</h4>
+<ul>
+<li>Las tarjetas (tareas) tienen como único punto de entrada la columna <b>por hacer</b>.</li>
+<li>Obviamente el flujo consiste en pasar a la columna (fase o estado) <b>en proceso</b>
+y terminar en <b>hecho</b>.</li>
+<li>Cada columna puede dividirse en subcolumnas (subfases) lo que permite
+describir el flujo de trabajo con mayor profundidad.</li>
+
+</ul>
+
+
+<div class="figure">
+<p><img src="assets/img/Kanban_complejo.png" alt="Kanban_complejo.png" />
+</p>
+</div>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org7b3b9ca">
+<h4 id="org7b3b9ca">Límites del trabajo</h4>
+<ul>
+<li>Una característica fundamental del método kanban es la <b>limitación del trabajo
+en proceso</b> o WIP (Work In Progress).</li>
+
+</ul>
+<blockquote nil>
+<p>
+"Los límites del trabajo en proceso (WIP) restringen la cantidad máxima de
+tareas (tarjetas) en las diferentes etapas (columnas) del flujo de trabajo"
+</p>
+</blockquote>
+<ul>
+<li>La limitación viene limitada por el número de tareas que se pueden hacer
+simultáneamente.</li>
+<li>En el caso de una gestión personal, el número máximo de tareas simultáneas <b>en
+proceso</b> es de <b>cuatro</b>.</li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgcd8f607">
+<h3 id="orgcd8f607">Getting Things Done</h3>
+<blockquote nil>
+<p>
+Getting Things Done (GTD) es un método de productividad que ha sido aceptado
+mundialmente como una de las metodologías más eficientes de organización
+personal.
+</p>
+</blockquote>
+<ul>
+<li>Fue publicado en el año 2001 por el norteamericano David Allen.</li>
+
+<li>Busca el estado de <b>Mizu no Kokoro</b>, <i>mente como el agua</i>, que es un estado mental
+de calma similar al agua en reposo, transparente y limpia, algo permite estar
+tranquilos y enfocarse en las cosas realmente importantes que necesitan
+atención.</li>
+
+<li>El objetivo es la disminución del nivel de estrés que se genera por la
+irrupción continua e impredecible de tareas a realizar.</li>
+
+<li>A partir de considerar nuestra memoria ineficiente, se basa de la necesidad de
+liberar la mente de las tareas pendientes aportando un sistema organizativo
+confiable externo a nuestra memoria.</li>
+
+</ul>
+
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org7e5ddf5">
+<h4 id="org7e5ddf5">Flujo de trabajo GTD</h4>
+<ul>
+<li>El flujo de trabajo que se usa en GTD tiene cinco etapas:
+<ul>
+<li><b>Capturar</b>: todo aquello que nos ronda nuestra mente como ideas, tareas,
+asuntos pendientes, preocupaciones, etc. y almacenarlo externamente.</li>
+<li><b>Seleccionar</b>: aquellos elementos almacenados que requieren acción por nuestra
+parte y desechar o archivar el resto simplemente como información de
+referencia.</li>
+<li><b>Organizar</b>: las acciones que debemos realizar para su seguimiento
+clasificándolas según una serie de criterios.</li>
+<li><b>Evaluar</b>: las acciones organizadas para decidir cuáles se llevaran a cabo.</li>
+<li><b>Realizar</b>: las acciones seleccionadas.</li>
+
+</ul></li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org5ead735">
+<h4 id="org5ead735">Aspectos a tener en cuenta</h4>
+<ul>
+<li>Las <b>acciones</b> se definen como <b>tareas</b> que pueden hacerse:
+<ul>
+<li>en un mismo momento</li>
+<li>en un mismo lugar</li>
+<li>de una sola vez.</li>
+
+</ul></li>
+<li>Los elementos que requieran <b>más de una acción</b> para ser llevados a cabo se
+consideran <b>proyectos</b> y deberán ser planificados.</li>
+<li>Si una acción puede realizarse en menos de <b>dos minutos</b>, debe llevarse a
+cabo.</li>
+<li>El flujo de trabajo tiene <b>un único punto de entrada</b> en la etapa de captura al
+que denominaremos <b>cajetín de entrada</b>.</li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgffa4ad4">
+<h4 id="orgffa4ad4">Revisiones</h4>
+<ul>
+<li>Para poder planificar bien se deben realizar revisiones de forma rutinaria que
+mantengan la fiabilidad del método:
+<ul>
+<li>Revisiones diarias: del cajetín de entrada seleccionado las próximas
+acciones que llevaremos a cabo o que deben quedar a la espera de algo o
+alguien.</li>
+<li>Revisión semanal: para detectar errores, aparcar acciones que no se podrán
+llevar a cabo en un marco temporal razonable, archivar acciones completadas,
+etc. Esta revisión sirva para mantener la fiabilidad del sistema.</li>
+<li>Revisión general: con una periodicidad más amplia para tener una visión
+global, analizar la eficiencia y corregir desviaciones.</li>
+
+</ul></li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgd546c35">
+<h4 id="orgd546c35">Diagrama de flujo GTD</h4>
+<img class="stretch" src="assets/img/GTD.jpg">
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+</section>
+<section>
+<section id="slide-orgf15fc26" data-background="#123456">
+<h2 id="orgf15fc26">Ontología</h2>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org120504c">
+<h3 id="org120504c">Fundamentos</h3>
+<ul>
+<li>El término ontología tiene su origen en la filosofía como una rama de la
+metafísica que <b>estudia lo que hay</b>.</li>
+<li>De forma general la ontología estudia las <b>cosas</b>, sus <b>propiedades</b> y <b>relaciones</b>.</li>
+<li>No obstante, para poder hacer un <b>uso pŕactico</b> de esta rama filosófica en
+informática es necesario aplicar la <b>taxonomía</b> o <b>ciencia de la clasificación</b>.</li>
+<li>Así podremos decir que una ontología en ciencia de la computación nace como
+respuesta a la necesidad de modelar el mundo como dominios de <b>objetos</b> junto
+con sus <b>atributos</b> y <b>relaciones</b>, clasificados según algún sistema de
+categorización o <b>taxonomía</b>.</li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgc09cd07">
+<h3 id="orgc09cd07">Ontología en ciencia de la computación</h3>
+<blockquote nil>
+<p>
+"En ciencia de la computación, ontología se define como una nomenclatura formal
+de <b>entidades</b><sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> pertenecientes a un <b>dominio</b>, así como una definición de
+<b>tipos</b><sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup> y <b>propiedades</b><sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup> de dichas entidades y las relaciones entre las
+mismas"
+</p>
+</blockquote>
+<ul>
+<li>En programación orientada a objetos, una ontología se definiría como un
+conjunto de <b>objetos</b> pertenecientes a <b>clases</b> con sus <b>atributos</b> y sus
+<b>relaciones</b>.</li>
+
+</ul>
+<aside class="notes">
+<p>
+Footnotes
+</p>
+<ol>
+<li>entidades, individuos, instancias o objetos</li>
+<li>tipos, conjuntos, colecciones, conceptos o clases</li>
+<li>propiedades, parámetros, aspectos, rasgos, características o atributos</li>
+
+</ol>
+
+</aside>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org9e54dce">
+<h3 id="org9e54dce">Ontología en la gestión de tareas</h3>
+<ul>
+<li>Objetos: las tareas</li>
+<li>Atributos: los datos (título, descripción, marco temporal, bitácora)</li>
+<li>Relaciones: cuando pertenecen a un proyecto</li>
+<li>Taxonomía: categorías</li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgba44a6b">
+<h3 id="orgba44a6b">Taxonomía de las tareas</h3>
+<blockquote nil>
+<p>
+"Clasificación u ordenación en grupos de cosas (<i>categorías</i>) que tienen unas
+características comunes"
+</p>
+</blockquote>
+<p>
+Categorías que utilizaremos para las tareas:
+</p>
+<ul>
+<li>Prioridad</li>
+<li>Asunto</li>
+<li>Actividad</li>
+<li>Localización</li>
+<li>Persona</li>
+<li>Organización</li>
+
+</ul>
+
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org09796a9">
+<h4 id="org09796a9">Etiquetas</h4>
+<ul>
+<li>Para cada <b>categoría</b> se creará un <b>conjunto de etiquetas</b> que asignaremos a las
+tareas que consideremos que pertenecen a dicha categoría.</li>
+
+<li>Las etiquetas tienen forma de <b>identificador</b>, es decir un conjunto de
+caracteres alfanuméricos en minúsculas sin espacios en blanco.</li>
+
+<li>En concreto, el identificador estará formado por un <b>sufijo</b> en forma de
+palabra, que indica la categoría, y una serie de <b>palabras adicionales</b>
+separadas por el carácter guión bajo: _. Por ejemplo: <code>prioridad_media</code>,
+<code>asunto_hogar</code>, <code>acción_comprar</code>, <code>persona_juan</code>, etc.</li>
+
+<li>Un identificador de etiqueta, o simplemente una <b>etiqueta</b>, podrá contener
+sinónimos para evitar su duplicación por error. Ej. <code>asunto_hobby_afición</code></li>
+
+<li>De esta forma, una tarea podrá pertenecer a múltiples categorías asignándole
+múltiples etiquetas.</li>
+
+</ul>
+
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orge34a127">
+<h4 id="orge34a127">Categoría: <code>prioridad</code></h4>
+<ul>
+<li>Prioridad para la realización de la tarea</li>
+<li>Es una simplificación de urgencia e importancia</li>
+<li>Categorías: baja, media, alta, &#x2026;</li>
+<li>Sufijo de la etiqueta: <b>prioridad_</b></li>
+<li>Ejemplos:
+<ul>
+<li><code>prioridad_baja</code></li>
+<li><code>prioridad_media</code></li>
+<li><code>prioridad_alta</code></li>
+<li>&#x2026;</li>
+
+</ul></li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgc8f0111">
+<h4 id="orgc8f0111">Categoría: <code>asunto</code></h4>
+<ul>
+<li>Asunto general en el que se enmarca la tarea como pueden ser hogar, hijos,
+salud, hobby, &#x2026;</li>
+<li>Sufijo de la etiqueta: <b>asunto_</b></li>
+<li>Ejemplos:
+<ul>
+<li><code>asunto_hogar</code></li>
+<li><code>asunto_hijos</code></li>
+<li><code>asunto_salud</code></li>
+<li><code>asunto_hobby</code></li>
+<li>&#x2026;</li>
+
+</ul></li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgdb66e79">
+<h4 id="orgdb66e79">Categoría: <code>acción</code></h4>
+<ul>
+<li>Verbo en tiempo infinitivo que describe la principal acción que se realizará
+en la tarea.</li>
+<li>Ej. comprar, recoger, escribir, leer, &#x2026;</li>
+<li>Sufijo de la etiqueta: <b>acción_</b></li>
+<li>Ejemplos:
+<ul>
+<li><code>acción_comprar</code></li>
+<li><code>acción_recoger</code></li>
+<li><code>acción_escribir</code></li>
+<li><code>acción_leer</code></li>
+<li>&#x2026;</li>
+
+</ul></li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org7903487">
+<h4 id="org7903487">Categoría: <code>localización</code></h4>
+<ul>
+<li>Lugar físico habitual en el que se debe realizar la tarea.</li>
+<li>Ej. colegio, centro comercial, farmacia de la esquina, &#x2026;</li>
+<li>Sufijo de la etiqueta: <b>localización_</b></li>
+<li>Ejemplos:
+<ul>
+<li><code>localización_colegio</code></li>
+<li><code>localización_carrefour_alameda</code></li>
+<li><code>localización_farmacia_de_la_esquina</code></li>
+<li>&#x2026;</li>
+
+</ul></li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org29e4ecc">
+<h4 id="org29e4ecc">Categoría: <code>persona</code></h4>
+<ul>
+<li>Nombre de la persona con la que tiene que ver principalmente la tarea.</li>
+<li>Ej. Juan Pérez, mi padre, &#x2026;</li>
+<li>Sufijo de la etiqueta: <b>persona_</b></li>
+<li>Ejemplos:
+<ul>
+<li><code>persona_juan_pérez</code></li>
+<li><code>persona_mi_padre</code></li>
+<li>&#x2026;</li>
+
+</ul></li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orge8e2683">
+<h4 id="orge8e2683">Categoría: <code>organización</code></h4>
+<ul>
+<li>Nombre de la organización con la que tiene que ver principalmente la tarea.</li>
+<li>Ej. operadora, asociación de vecinos, &#x2026;</li>
+<li>Sufijo de la etiqueta: <b>organización_</b></li>
+<li>Ejemplos:
+<ul>
+<li><code>organización_yoigo</code></li>
+<li><code>organización_asociación_vecinal_bloque_a</code></li>
+<li>&#x2026;</li>
+
+</ul></li>
+
+</ul>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgc349a5c">
+<h4 id="orgc349a5c">Categoría: <code>fase</code></h4>
+<ul>
+<li><b>Fase</b>, <b>etapa</b> o <b>estado</b> de ejecución en la que se encuentra la tarea.</li>
+<li>Ej. por hacer, en proceso, hecho, &#x2026;</li>
+
+</ul>
+
+<blockquote nil>
+<p>
+"No se utilizarán etiquetas para esta categoría ya que se utilizará para definir
+las columnas del tablero visual (Kanban) del flujo de trabajo"
+</p>
+</blockquote>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+</section>
+<section>
+<section id="slide-org41e1838" data-background="#123456">
+<h2 id="org41e1838">Método ManBand</h2>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org9e0bcb1">
+<h3 id="org9e0bcb1">Ya tenemos lo que necesitamos</h3>
+<ul>
+<li>Hemos definido y caracterizado lo que es una tarea</li>
+<li>Hemos seleccionado un par reconocidas de metodologías:
+<ul>
+<li>kanban (tarjetas y listas)</li>
+<li>GTD (flujo de trabajo)</li>
+
+</ul></li>
+<li>Hemos creado una taxonomía (sistema de clasificación) de tareas</li>
+
+</ul>
+<img class="stretch" src="assets/img/ManBand_build.jpg">
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org39543f7">
+<h3 id="org39543f7">Selección de herramienta digital</h3>
+<ul>
+<li>Disponemos de muchas posibilidades:
+<ul>
+<li><a href="https://asana.com/">asana</a></li>
+<li><a href="https://basecamp.com/">basecamp</a></li>
+<li><a href="https://centrallo.com/">centrallo</a></li>
+<li><a href="https://www.atlassian.com/es/software/jira">jira</a></li>
+<li><a href="https://kanbanize.com/">kabanize</a></li>
+<li><a href="https://monday.com/">monday.com</a></li>
+<li><a href="https://niftypm.com/">nifty</a></li>
+<li><a href="https://quire.io/">quire</a></li>
+<li><a href="https://www.rememberthemilk.com/">remember the milk</a></li>
+<li><a href="https://www.smartsheet.com/task-management">smartsheet</a></li>
+<li><a href="https://www.taskworld.com">taskworld</a></li>
+<li><a href="https://trello.com/">trello</a></li>
+<li><a href="https://www.wunderlist.com/">wunderlist</a></li>
+<li><a href="https://www.wrike.com">wrike</a></li>
+<li><a href="https://www.zoho.com/projects/">zoho projects</a></li>
+<li>etc.</li>
+
+</ul></li>
+
+</ul>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org3c96f49">
+<h3 id="org3c96f49"><img src="assets/img/logo-trello.png" alt="logo-trello.png" /></h3>
+<ul>
+<li>Trello es muy conocido por su simplicidad, potencia visual y opción de uso sin coste.</li>
+<li>Está basado en web por lo que tan solo necesitamos un navegador.</li>
+<li>Dispone de app para móvil.</li>
+<li>Presenta tableros con listas que contienen tarjetas.</li>
+<li>Ofrece muchas posibilidades</li>
+<li>Es muy adecuado para el método ManBand.</li>
+
+</ul>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgb200f7e">
+<h3 id="orgb200f7e">Diagrama de flujo ManBand</h3>
+<img class="stretch" src="assets/img/ManBand_workflow.jpg">
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org0e3228b">
+<h3 id="org0e3228b">Listas</h3>
+<ul>
+<li>Por Hacer
+<ul>
+<li>Algún día</li>
+<li>Recurrentes</li>
+<li>Entrada</li>
+<li>Próximas</li>
+
+</ul></li>
+<li>En Proceso
+<ul>
+<li>Hacer ahora</li>
+<li>Esperando a</li>
+
+</ul></li>
+<li>Hecho
+<ul>
+<li>Reciente</li>
+<li>Referencias</li>
+
+</ul></li>
+
+</ul>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orge4d7301">
+<h4 id="orge4d7301">Listas en Trello</h4>
+<p>
+<img src="assets/img/ManBand_Menu_Trello.png" alt="ManBand_Menu_Trello.png" />
+<img src="assets/img/Listas_Por_Hacer.png" alt="Listas_Por_Hacer.png" />
+<img src="assets/img/Listas_En_Proceso.png" alt="Listas_En_Proceso.png" />
+<img src="assets/img/Listas_Hecho.png" alt="Listas_Hecho.png" />
+</p>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orga854494">
+<h3 id="orga854494">Taxonomía</h3>
+<ul>
+<li><code>prioridad</code>
+<ul>
+<li><code>prioridad_baja</code></li>
+<li><code>prioridad_media</code></li>
+<li><code>prioridad_alta</code></li>
+
+</ul></li>
+<li><code>asunto</code>
+<ul>
+<li><code>asunto_hogar</code></li>
+<li><code>asunto_hijos</code></li>
+<li><code>asunto_salud</code></li>
+<li><code>asunto_hobby</code></li>
+
+</ul></li>
+<li><code>acción</code>
+<ul>
+<li><code>acción_comprar</code></li>
+<li><code>acción_recoger</code></li>
+<li><code>acción_escribir</code></li>
+<li><code>acción_leer</code></li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-orga854494-split">
+<ul>
+<li><code>localización</code>
+<ul>
+<li><code>localización_colegio</code></li>
+<li><code>localización_carrefour_alameda</code></li>
+<li><code>localización_farmacia_de_la_esquina</code></li>
+
+</ul></li>
+<li><code>persona</code>
+<ul>
+<li><code>persona_juan_pérez</code></li>
+<li><code>persona_mi_padre</code></li>
+
+</ul></li>
+<li><code>organización</code>
+<ul>
+<li><code>organización_yoigo</code></li>
+<li><code>organización_asociación_vecinal_bloque_a</code></li>
+
+</ul></li>
+
+</ul>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgd63be09">
+<h4 id="orgd63be09">Taxonomía en Trello</h4>
+
+<div class="figure">
+<p><img src="assets/img/ManBand_Etiquetas_Trello.png" alt="ManBand_Etiquetas_Trello.png" />
+</p>
+</div>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org5c5ccb1">
+<h3 id="org5c5ccb1">Detalle de tarea en Trello</h3>
+<img class="stretch" src="assets/img/Detalle_tarea_Trello.png">
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org11a8a8e">
+<h3 id="org11a8a8e">Detalle de listas en Trello</h3>
+<p>
+<img src="assets/img/Listas_Por_Hacer_Ejemplo.png" alt="Listas_Por_Hacer_Ejemplo.png" />
+<img src="assets/img/Listas_En_Proceso_Ejemplo.png" alt="Listas_En_Proceso_Ejemplo.png" />
+<img src="assets/img/Listas_Hecho_Ejemplo.png" alt="Listas_Hecho_Ejemplo.png" />
+</p>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgda82225">
+<h3 id="orgda82225">Tablero en Trello</h3>
+<img class="stretch" src="assets/img/ManBand_Tablero_Ejemplo1_Trello.png">
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgb793668">
+<h3 id="orgb793668">Búsquedas</h3>
+<blockquote nil>
+<p>
+Lo habitual será que en nuestro tablero tengamos decenas de tareas
+</p>
+</blockquote>
+<ul>
+<li>Podemos buscar y filtrar gracias al sistema de clasificación de etiquetas:
+<ul>
+<li><code>board:"Personal"</code> selección del tablero en el que buscar</li>
+<li><code>is:open</code> selección de tareas activas (no archivadas)</li>
+<li><code>-LABELS #priority-high</code> filtro de etiquetas</li>
+
+</ul></li>
+
+</ul>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org3914acb">
+<h3 id="org3914acb">Ejemplo de búsqueda</h3>
+<ul>
+<li>Lista de la compra:</li>
+
+</ul>
+
+
+<div class="figure">
+<p><img src="assets/img/search_comprar.png" alt="search_comprar.png" />
+</p>
+</div>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+</section>
+<section>
+<section id="slide-orgc51c551" data-background="#123456">
+<h2 id="orgc51c551">Miscelánea</h2>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgcea4804">
+<h3 id="orgcea4804">Gestionar más de un tablero</h3>
+<ul>
+<li>Un tablero, junto con el sistema de clasificación, debe ser suficiente para
+una gestión de tareas eficiente.</li>
+<li>A veces, en un tablero, predominan tareas que tienen que ver con un asunto
+concreto como por ejemplo: <code>asunto_trabajo</code></li>
+<li>En ese caso se puede crear un tablero para las tareas que son de un
+determinado asunto.</li>
+<li>No obstante hay que tratar de evitar esta situación.</li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgf6f263e">
+<h3 id="orgf6f263e">Gestión de proyectos</h3>
+<blockquote nil>
+<p>
+Si las tareas presentan una relación de dependencia y entre todas persiguen un
+objetivo común nos encontramos ante un proyecto.
+</p>
+</blockquote>
+<ul>
+<li>El método ManBand se puede extender añadiendo técnicas para gestionar el tiempo y
+las dependencias.</li>
+<li>Hay que aplicar metodologías basadas en representaciones Gantt, Pert, CPM y
+otras.</li>
+<li>La visualización en la gestión de proyectos es importante por lo que la
+herramienta debe ser visualmente potente: <a href="https://asana.com/">asana</a>, <a href="https://www.atlassian.com/es/software/jira">jira</a> (software) y otras.</li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgf14cea0">
+<h3 id="orgf14cea0">Evitar la procrastinación: la técnica del pomodoro</h3>
+<div class="outline-text-3" id="text-orgf14cea0">
+</div>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org7ac5a5b">
+<h4 id="org7ac5a5b">Procrastinación, postergación o posposición</h4>
+<blockquote nil>
+<p>
+Hábito de retrasar actividades o situaciones que deben atenderse,
+sustituyéndolas por otras situaciones más irrelevantes o agradables.
+</p>
+</blockquote>
+
+<div class="figure">
+<p><img src="assets/img/ahora_más_tarde.jpg" alt="ahora_más_tarde.jpg" />
+</p>
+</div>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orga10e8c4">
+<h4 id="orga10e8c4">Técnica del pomodoro</h4>
+<img style="background:none; border:none; box-shadow:none;" src="assets/img/reloj_pomodoro.png">
+<blockquote nil>
+<p>
+La Técnica Pomodoro fue desarrollada por Francesco Cirillo a finales de la
+década de los 80, y es un sistema que busca mejorar la administración del tiempo
+a través de su división en fragmentos.
+</p>
+</blockquote>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-org164b758">
+<h4 id="org164b758">Ciclo pomodoro</h4>
+<ul>
+<li>Selecciona la siguiente tarea: <code>Por Hacer (Próximas)</code></li>
+<li>Dedica 25 minutos a la tarea</li>
+<li>Descansa 5 minutos</li>
+<li>Repite el ciclo 4 veces y descansa durante 30 minutos</li>
+
+</ul>
+
+<img style="background:none; border:none; box-shadow:none;" src="assets/img/tecnica-pomodoro.png">
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+<section id="slide-orgd15b232">
+<h3 id="orgd15b232">Realización de más de una tarea al mismo tiempo</h3>
+<ul>
+<li>La multitarea real en el cerebro un humano no existe más allá de las funciones
+vitales.</li>
+<li>Podemos pensar en una tarea a la vez.</li>
+<li>El problema surge porque el cambio de una tarea a otra exige un cambio de
+contexto.</li>
+<li>Actualmente hay un cierto consenso en que nuestro cerebro es capaz de
+gestionar con cierta comodidad 2 tareas al mismo tiempo (con su cambio de
+contexto).</li>
+<li>En cualquier caso la multitarea aumenta el nivel de estrés y disminuye el
+rendimiento facilitando la aparición de errores.</li>
+
+</ul>
+
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+</section>
+<section>
+<section id="slide-org3c9746c">
+<h2 id="org3c9746c">Muchas gracias</h2>
+<blockquote nil>
+<p>
+"Recuerda que lo importante es el <b>ćomo</b>"
+</p>
+</blockquote>
 
 <ul>
-<li>El pensamiento <strong>divergente</strong> es un proceso de pensamiento de generar ideas creativas mediante la exploración de muchas posibles soluciones.</li>
-<li>El pensamiento <strong>convergente</strong> representa la habilidad de dar la respuesta &quot;correcta&quot; a preguntas estandarizadas que no requieren significativamente de creatividad.</li>
-<li>El pensamiento <strong>creativo</strong> consiste en el desarrollo de nuevas ideas y conceptos. Se trata de la habilidad de formar nuevas combinaciones de ideas para llenar una necesidad.</li>
-</ul></li>
-<li>La naturaleza creativa de los trabajadores del conocimiento hacen que generen continuamente multiples iniciativas que se acaban convirtiendo en tareas realizables en su mayoría.</li>
+<li>Web: <a href="http://goyoambrosio.com">http://goyoambrosio.com</a></li>
+<li>linkedin: <a href="https://www.linkedin.com/in/goyoambrosio/">https://www.linkedin.com/in/goyoambrosio/</a></li>
+
 </ul>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+<p>
+Realizado con <a href="https://www.gnu.org/software/emacs/">Emacs</a> + <a href="https://github.com/yjwen/org-reveal">org-reveal</a> + <a href="https://revealjs.com">Reveal.js</a> por Gregorio Ambrosio (Goyo AC)
+</p>
+<div class="slide-footer"><p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p></div>
+</section>
+</section>
+</div>
+</div>
+<p> Created by Gregorio Ambrosio. </p>
+<script src="./reveal.js/js/reveal.js"></script>
 
-<slide class="" id="slide-6" style="background:;">
-  <hgroup>
-    <h2>Stress por retención de tareas a realizar</h2>
-  </hgroup>
-  <article data-timings="">
-    
-  </article>
-  <!-- Presenter Notes -->
-</slide>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+width:1280, height:1024, slideNumber:"c/t",
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
 
-<slide class="" id="slide-7" style="background:;">
-  <hgroup>
-    <h2>Proyectos</h2>
-  </hgroup>
-  <article data-timings="">
-    
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="segue dark" id="slide-8" style="background:;">
-  <hgroup>
-    <h2>Herramientas</h2>
-  </hgroup>
-  <article data-timings="">
-    <ul>
-<li>Trello, Remember the Milk</li>
-<li>Google Calendar</li>
-<li>Xmind (Mind Maps)</li>
-<li>Zapier</li>
-</ul>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="segue dark" id="slide-9" style="background:;">
-  <hgroup>
-    <h2>Metodologías</h2>
-  </hgroup>
-  <article data-timings="">
-    <ul>
-<li>Método Kaban</li>
-<li>Getting Things Done (GTD)</li>
-</ul>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-    <slide class="backdrop"></slide>
-  </slides>
-  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
-    <ul>
-      <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='NA'>
-         1
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Conceptos'>
-         2
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Tareas'>
-         3
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Gestión de tareas'>
-         4
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Trabajadores del conocimiento'>
-         5
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='Stress por retención de tareas a realizar'>
-         6
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='Proyectos'>
-         7
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='Herramientas'>
-         8
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title='Metodologías'>
-         9
-      </a>
-    </li>
-  </ul>
-  </div>  <!--[if IE]>
-    <script 
-      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
-    </script>
-    <script>CFInstall.check({mode: 'overlay'});</script>
-  <![endif]-->
-</body>
-  <!-- Load Javascripts for Widgets -->
-  <script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
-<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
-<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
-<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
-<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
-
-  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        processEscapes: true
-      }
-    });
-  </script>
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script> -->
-  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
 </script>
-<script>  
-  $(function (){ 
-    $("#example").popover(); 
-    $("[rel='tooltip']").tooltip(); 
-  });  
-  </script>  
-  <!-- LOAD HIGHLIGHTER JS FILES -->
-  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
-   
-  </html>
+</body>
+</html>

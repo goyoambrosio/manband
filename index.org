@@ -1,0 +1,684 @@
+# -*- mode: org; coding: utf-8-unix; ispell-dictionary: "spanish"; org-hide-emphasis-markers: t; eval: (auto-fill-mode); eval: (fci-mode) -*-
+
+
+# #+BEGIN_abstract
+# This is the abstract
+# #+END_abstract
+
+
+* Header Information                                               :noexport:
+
+** Identification
+
+# [[https://orgmode.org/manual/Export-settings.html][Export settings]]
+#+TITLE: Gestión de tareas como hombre orquesta
+#+SUBTITLE: Método ManBand
+#+DESCRIPTION: Gestión de tareas a partir de metodologías GTD, kanban, una taxonomía y trello como aplicación.
+#+KEYWORDS: keywords separated by comma
+# Use keybind C-c . or C-c < or free format like "Saturday 9th, 2019"
+#+DATE:
+#+AUTHOR: Gregorio Ambrosio Cestero
+#+EMAIL: goyoac@gmail.com
+#+LANGUAGE: en
+
+** General settings
+
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.2.2 (Org mode 9.1.14)
+
+#+OPTIONS: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline author:t
+#+OPTIONS: broken-links:nil c:nil creator:nil d:(not "LOGBOOK") date:t e:t
+#+OPTIONS: email:t f:t inline:t num:t p:nil pri:nil prop:nil stat:t tags:t
+#+OPTIONS: tasks:t tex:t timestamp:t title:t toc:t todo:nil |:t
+
+# #+STARTUP: hidestars
+# #+STARTUP: hideblocks
+# #+STARTUP: nohideblocks
+#+STARTUP: overview
+#+STARTUP: indent
+#+STARTUP: logdrawer
+
+#+COLUMNS: %25ITEM %TAGS %TODO
+
+ Keywords for file-local settings. The keywords after the vertical bar (or the
+ last keyword if no bar is there) must always mean thaGTDt the item is in its final
+ state. Use C-c C-c with the cursor still in the line to make the changes known
+ to Org mode
+ #+TODO: TODO(t) NEXT(n) STARTED(s!) WAITING(w@/!) SOMEDAY(o) PROJ(p)| DONE(d!) CANCELLED(c@)
+
+# TOC related
+# #+OPTIONS: toc:t          include all levels in TOC
+# #+OPTIONS: toc:2          only include two levels in TOC
+# #+OPTIONS: toc:nil        no default TOC at all
+
+# To move the TOC to a different location:
+# #+OPTIONS: toc:nil        no default TOC
+# ...
+# #+TOC: headlines 2        insert TOC here, with two headline levels
+
+# Use the TOC keyword to generate list of tables (resp. all listings) with captions.
+# #+TOC: listings           build a list of listings
+# #+TOC: tables             build a list of tables
+
+** Export settings
+*** ODT
+
+ # [[https://orgmode.org/manual/ODT-specific-export-settings.html][ODT specific export settings]]
+ # Style file application does not work fine for me. Apply with Load Style after
+ # file creation.
+ # #+ODT_STYLES_FILE: ~/cloud/Dropbox/DOCUMENTS/TEMPLATES/ODT/my_odt_template.odt
+ # [[https://orgmode.org/manual/ASCII_002fLatin_002d1_002fUTF_002d8-export.html#ASCII_002fLatin_002d1_002fUTF_002d8-export][ASCII specific export setting]] (also for ODT)
+ # #+DESCRIPTION and #+KEYWORDS are included as metadata in the aoutput file.
+
+
+ # Abstract does not work when export in ODT format. Use it for Latex
+ # #+BEGIN_ABSTRACT
+ # Abstract
+ # #+END_ABSTRACT
+ # #+TOC: headlines 2
+
+*** Code
+
+ # To avoid evaluating code on export use the following header argument:
+ #+PROPERTY: header-args :eval never-export
+
+*** Pandoc
+
+ #+BEGIN_COMMENT
+ # Useful commands
+ # Pandoc ignores some headers options (as PROPERTIES). Use export (C-c-e o o) instead.
+ cd ~/cloud/Dropbox/DOCUMENTS/TEMPLATES
+ pandoc this_file.org --reference-doc=/home/goyo/cloud/Dropbox/DOCUMENTS/TEMPLATES/DOCX/my_docx_template.docx -o this_file.docx
+ soffice --nologo --writer this_file.docx
+ #+END_COMMENT
+
+*** LaTeX
+
+# LaTeX specific export settings
+# ================================
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper]
+# #+LATEX_CLASS_OPTIONS: [garamond]
+# #+LATEX_HEADER: \usepackage{setspace}
+# #+LATEX_HEADER: \doublespacing
+#+LATEX_CLASS_OPTIONS: [12pt]
+#+LATEX_HEADER: \usepackage[innermargin=1in,outermargin=0.75in,vmargin=1.5cm]{geometry}
+#+LATEX_HEADER: \linespread{1.1}
+#+LATEX_HEADER: \usepackage{natbib}
+#+LATEX_HEADER: \usepackage[spanish]{babel}
+
+*** reveal.js
+
+#+REVEAL_INIT_OPTIONS: width:1280, height:1024, slideNumber:"c/t"
+#+OPTIONS: num:nil toc:nil ^:nil
+#+REVEAL_TRANS: fade
+#+REVEAL_THEME: moon
+#+REVEAL_HEAD_PREAMBLE: <meta name="Gestión de tareas con metodología GTD, kanban, una ontología y Trello como aplicación" content="Gestión de tareas">
+#+REVEAL_POSTAMBLE: <p> Created by Gregorio Ambrosio. </p>
+#+REVEAL_HLEVEL: 1
+# #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.8.0
+#+REVEAL_ROOT: ./reveal.js
+#+OPTIONS: reveal_single_file:nil
+#+REVEAL_EXTRA_CSS: ./assets/css/goyo.css
+#+REVEAL_SLIDE_FOOTER: <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Goyo AC</p>
+*** ioslide
+
+#+COMPANY: Goyo AC
+#+WWW: http://goyoambrosio.com
+#+GITHUB: http://github.com/goyoambrosio
+#+TWITTER: gambrosio
+
+#+FAVICON: assets/img/goyologo_circle.png
+#+ICON: assets/img/goyologo_circle.png
+#+HASHTAG: gambrosio
+
+
+* ¿Qué pretendemos en esta presentación? 
+
+#+BEGIN_QUOTE
+Aprender a gestionar con la máxima eficiencia un número elevado de tareas
+disminuyendo el estrés que genera esa actividad.
+#+END_QUOTE
+# #+ATTR_REVEAL: :frag (appear)
+#+REVEAL_HTML: <img style="background:none; border:none; box-shadow:none;" src="assets/img/separador1.png">
+- En el entorno personal
+- En entornos profesionales adecuados (gestión de incidencias, soporte, etc.)
+
+* ¿Qué es el método ManBand?
+#+BEGIN_QUOTE
+Es una forma eficiente de gestionar un gran número de tareas no relacionadas
+mediante la utilización conjunta de metodologías y conceptos reconocidos de
+forma coherente y estructurada.
+#+END_QUOTE
+#+REVEAL_HTML: <img class="stretch" src="assets/img/hombre_manband.jpg">
+
+* ¿Qué necesitamos?
+- Definir tareas
+- Emplear metodologías para gestionarlas
+- Aplicar un sistema de clasificación
+
+* Tareas
+:PROPERTIES:
+:reveal_background: #123456
+:END:
+** Definición de tarea
+#+BEGIN_QUOTE
+"Realización de un determinado trabajo o acción que se lleva a cabo en un
+**tiempo limitado** y /breve/ con un fin determinado"
+#+END_QUOTE
+
+#+BEGIN_NOTES
+- La brevedad es relativa pero en todo caso se entiende que no es una acción
+  dilatada en el tiempo porque si no sería una *actividad*.
+- El fin o la meta no es un objetivo, puesto que lo objetivos tienen que ser
+  cuantificables por definición.
+#+END_NOTES
+** Algunas consideraciones sobre la tareas
+#+ATTR_REVEAL: :frag (highlight-green)
+- Requieren *tiempo y esfuerzo* por lo que deben desempeñar con el máximo nivel de
+  *eficiencia*.
+- Se pueden aplicar múltiples criterios de clasificación.
+- No debemos confundirlas con proyectos.
+
+#+BEGIN_NOTES
+- Las tareas requieren *tiempo y esfuerzo* por lo que deben desempeñarse con el
+  máximo nivel de *eficiencia* posible.
+
+- Se pueden clasificar con múltiples criterios:
+  - Principalmente, según su origen se clasifican en *voluntarias e impuestas*.
+  - Otro citerio de clasificación inportante es según su programación pudiendo
+    ser *planificadas o no planificadas*.
+  - Según quien las realice, las tareas pueden se realizadas *por uno mismo,
+    delegadas o diferidas*.
+  - Además se pueden clasificar por otros criterios como: prioridades, contexto,
+    personas y agentes relacionados, localización, tipo actividad, individual o
+    en equipo, etc.
+- Las tareas se pueden dividir en otras subtareas, siempre menos complejas. En
+  procesos complejos las tareas se organizan en *proyectos* en donde se establecen
+  relaciones de dependencia entre ellas mismas y entre ellas y sus responsables.
+#+END_NOTES
+** Datos de una tarea
+- Un título breve
+- Una descripción u observaciones
+- Un marco temporal
+- Un cuaderno de bitácora
+- Otros datos que consideremos necesarios
+* Metodologías
+:PROPERTIES:
+:reveal_background: #123456
+:END:
+Para una gestión eficiente de tareas vamos a usar de forma combinada dos
+metodologías:
+- El método kanban que aporta simplicidad y visualización.
+- El método GTD que aporta organización y productividad.
+** Método Kanban
+
+#+BEGIN_QUOTE
+Kanban es un método para gestionar el trabajo, aplicable en situaciones donde el
+trabajo llega de forma impredecible y puede ser ejecutado tan pronto como llega
+sin depender de otros trabajos.
+#+END_QUOTE
+- Kanban surgió en Toyota Production System (TPS).
+
+- El término "kanban" es japonés (看板) y significa *tablero visual*.
+
+- Se basa en tres principios:
+  - Visualización de todo el trabajo de forma global.
+  - Limitación del volumen de trabajo en proceso.
+  - Mejora del flujo de trabajo.
+
+*** El tablero kanban
+#+BEGIN_QUOTE
+"El tablero kanban es la herramienta central del método de gestión de tareas kanban"
+#+END_QUOTE
+[[file:assets/img/kanban-board-toyota.png]]
+
+*** Estructura de un tablero kanban
+- El tablero se organiza en _*columnas* que representan *fases del proceso del
+  trabajo*_ y filas que representan tipos de actividades como diseño, errores,
+  etc.
+
+- En cada columna se disponen _*tarjetas* que representan *tareas*_.
+
+- Cada tarjeta contienen información relativa a la tarea.
+
+- Las tarjetas se van moviendo entre columnas siguiendo las fases del flujo de
+  trabajo.
+
+- El tablero básico dispone de tres columnas que representan a las tres fases
+  indispensables en el flujo de una tarea: *por hacer*, *en proceso* y *hecho*.
+
+[[file:assets/img/Kanban_simple.png]]
+
+*** Flujo de trabajo en el tablero kanban
+
+- Las tarjetas (tareas) tienen como único punto de entrada la columna *por hacer*.
+- Obviamente el flujo consiste en pasar a la columna (fase o estado) *en proceso*
+  y terminar en *hecho*.
+- Cada columna puede dividirse en subcolumnas (subfases) lo que permite
+  describir el flujo de trabajo con mayor profundidad.
+
+[[file:assets/img/Kanban_complejo.png]]
+
+*** Límites del trabajo
+
+- Una característica fundamental del método kanban es la *limitación del trabajo
+  en proceso* o WIP (Work In Progress).
+#+BEGIN_QUOTE 
+"Los límites del trabajo en proceso (WIP) restringen la cantidad máxima de
+tareas (tarjetas) en las diferentes etapas (columnas) del flujo de trabajo"
+#+END_QUOTE
+- La limitación viene limitada por el número de tareas que se pueden hacer
+  simultáneamente.
+- En el caso de una gestión personal, el número máximo de tareas simultáneas *en
+  proceso* es de *cuatro*.
+
+** Getting Things Done
+#+BEGIN_QUOTE
+Getting Things Done (GTD) es un método de productividad que ha sido aceptado
+mundialmente como una de las metodologías más eficientes de organización
+personal.
+#+END_QUOTE
+- Fue publicado en el año 2001 por el norteamericano David Allen.
+
+- Busca el estado de *Mizu no Kokoro*, /mente como el agua/, que es un estado mental
+  de calma similar al agua en reposo, transparente y limpia, algo permite estar
+  tranquilos y enfocarse en las cosas realmente importantes que necesitan
+  atención.
+
+- El objetivo es la disminución del nivel de estrés que se genera por la
+  irrupción continua e impredecible de tareas a realizar.
+
+- A partir de considerar nuestra memoria ineficiente, se basa de la necesidad de
+  liberar la mente de las tareas pendientes aportando un sistema organizativo
+  confiable externo a nuestra memoria.
+
+
+*** Flujo de trabajo GTD
+
+- El flujo de trabajo que se usa en GTD tiene cinco etapas:
+  - *Capturar*: todo aquello que nos ronda nuestra mente como ideas, tareas,
+    asuntos pendientes, preocupaciones, etc. y almacenarlo externamente.
+  - *Seleccionar*: aquellos elementos almacenados que requieren acción por nuestra
+    parte y desechar o archivar el resto simplemente como información de
+    referencia.
+  - *Organizar*: las acciones que debemos realizar para su seguimiento
+    clasificándolas según una serie de criterios.
+  - *Evaluar*: las acciones organizadas para decidir cuáles se llevaran a cabo.
+  - *Realizar*: las acciones seleccionadas.
+
+*** Aspectos a tener en cuenta
+
+- Las *acciones* se definen como *tareas* que pueden hacerse:
+  - en un mismo momento
+  - en un mismo lugar
+  - de una sola vez.
+- Los elementos que requieran *más de una acción* para ser llevados a cabo se
+  consideran *proyectos* y deberán ser planificados.
+- Si una acción puede realizarse en menos de *dos minutos*, debe llevarse a
+  cabo.
+- El flujo de trabajo tiene *un único punto de entrada* en la etapa de captura al
+  que denominaremos *cajetín de entrada*.
+
+*** Revisiones
+
+- Para poder planificar bien se deben realizar revisiones de forma rutinaria que
+  mantengan la fiabilidad del método:
+  - Revisiones diarias: del cajetín de entrada seleccionado las próximas
+    acciones que llevaremos a cabo o que deben quedar a la espera de algo o
+    alguien.
+  - Revisión semanal: para detectar errores, aparcar acciones que no se podrán
+    llevar a cabo en un marco temporal razonable, archivar acciones completadas,
+    etc. Esta revisión sirva para mantener la fiabilidad del sistema.
+  - Revisión general: con una periodicidad más amplia para tener una visión
+    global, analizar la eficiencia y corregir desviaciones.
+
+*** Diagrama de flujo GTD
+#+REVEAL_HTML: <img class="stretch" src="assets/img/GTD.jpg">
+
+* Ontología
+:PROPERTIES:
+:reveal_background: #123456
+:END:
+** Fundamentos
+
+- El término ontología tiene su origen en la filosofía como una rama de la
+  metafísica que *estudia lo que hay*.
+- De forma general la ontología estudia las *cosas*, sus *propiedades* y *relaciones*.
+- No obstante, para poder hacer un *uso pŕactico* de esta rama filosófica en
+  informática es necesario aplicar la *taxonomía* o *ciencia de la clasificación*.
+- Así podremos decir que una ontología en ciencia de la computación nace como
+  respuesta a la necesidad de modelar el mundo como dominios de *objetos* junto
+  con sus *atributos* y *relaciones*, clasificados según algún sistema de
+  categorización o *taxonomía*.
+
+** Ontología en ciencia de la computación
+#+BEGIN_QUOTE
+"En ciencia de la computación, ontología se define como una nomenclatura formal
+de *entidades*[fn:1] pertenecientes a un *dominio*, así como una definición de
+*tipos*[fn:2] y *propiedades*[fn:3] de dichas entidades y las relaciones entre las
+mismas"
+#+END_QUOTE
+- En programación orientada a objetos, una ontología se definiría como un
+  conjunto de *objetos* pertenecientes a *clases* con sus *atributos* y sus
+  *relaciones*.
+#+BEGIN_NOTES
+Footnotes
+1. entidades, individuos, instancias o objetos
+2. tipos, conjuntos, colecciones, conceptos o clases
+3. propiedades, parámetros, aspectos, rasgos, características o atributos
+
+[fn:1] entidades, individuos, instancias o objetos
+[fn:2] tipos, conjuntos, colecciones, conceptos o clases
+[fn:3] propiedades, parámetros, aspectos, rasgos, características o atributos
+#+END_NOTES
+
+** Ontología en la gestión de tareas
+
+- Objetos: las tareas
+- Atributos: los datos (título, descripción, marco temporal, bitácora)
+- Relaciones: cuando pertenecen a un proyecto 
+- Taxonomía: categorías
+
+** Taxonomía de las tareas
+#+BEGIN_QUOTE
+"Clasificación u ordenación en grupos de cosas (/categorías/) que tienen unas
+características comunes"
+#+END_QUOTE
+Categorías que utilizaremos para las tareas:
+- Prioridad
+- Asunto
+- Actividad
+- Localización
+- Persona
+- Organización
+
+
+*** Etiquetas
+
+- Para cada *categoría* se creará un *conjunto de etiquetas* que asignaremos a las
+  tareas que consideremos que pertenecen a dicha categoría.
+
+- Las etiquetas tienen forma de *identificador*, es decir un conjunto de
+  caracteres alfanuméricos en minúsculas sin espacios en blanco.
+
+- En concreto, el identificador estará formado por un *sufijo* en forma de
+  palabra, que indica la categoría, y una serie de *palabras adicionales*
+  separadas por el carácter guión bajo: _. Por ejemplo: =prioridad_media=,
+  =asunto_hogar=, =acción_comprar=, =persona_juan=, etc.
+
+- Un identificador de etiqueta, o simplemente una *etiqueta*, podrá contener
+  sinónimos para evitar su duplicación por error. Ej. =asunto_hobby_afición=
+
+- De esta forma, una tarea podrá pertenecer a múltiples categorías asignándole
+  múltiples etiquetas.
+
+
+*** Categoría: =prioridad=
+- Prioridad para la realización de la tarea
+- Es una simplificación de urgencia e importancia
+- Categorías: baja, media, alta, ...
+- Sufijo de la etiqueta: *prioridad_*
+- Ejemplos:
+  - =prioridad_baja=
+  - =prioridad_media=
+  - =prioridad_alta=
+  - ...
+  
+*** Categoría: =asunto=
+- Asunto general en el que se enmarca la tarea como pueden ser hogar, hijos,
+  salud, hobby, ...
+- Sufijo de la etiqueta: *asunto_*
+- Ejemplos:
+  - =asunto_hogar=
+  - =asunto_hijos=
+  - =asunto_salud=
+  - =asunto_hobby=
+  - ...
+
+*** Categoría: =acción=
+- Verbo en tiempo infinitivo que describe la principal acción que se realizará
+  en la tarea.
+- Ej. comprar, recoger, escribir, leer, ... 
+- Sufijo de la etiqueta: *acción_*
+- Ejemplos:
+  - =acción_comprar=
+  - =acción_recoger=
+  - =acción_escribir=
+  - =acción_leer=
+  - ...
+
+*** Categoría: =localización=
+- Lugar físico habitual en el que se debe realizar la tarea.
+- Ej. colegio, centro comercial, farmacia de la esquina, ... 
+- Sufijo de la etiqueta: *localización_*
+- Ejemplos:
+  - =localización_colegio=
+  - =localización_carrefour_alameda=
+  - =localización_farmacia_de_la_esquina=
+  - ...
+
+*** Categoría: =persona=
+- Nombre de la persona con la que tiene que ver principalmente la tarea.
+- Ej. Juan Pérez, mi padre, ...
+- Sufijo de la etiqueta: *persona_*
+- Ejemplos:
+  - =persona_juan_pérez=
+  - =persona_mi_padre=
+  - ...
+
+*** Categoría: =organización=
+
+- Nombre de la organización con la que tiene que ver principalmente la tarea.
+- Ej. operadora, asociación de vecinos, ...
+- Sufijo de la etiqueta: *organización_*
+- Ejemplos:
+  - =organización_yoigo=
+  - =organización_asociación_vecinal_bloque_a=
+  - ...
+*** Categoría: =fase=
+- *Fase*, *etapa* o *estado* de ejecución en la que se encuentra la tarea.
+- Ej. por hacer, en proceso, hecho, ...
+
+#+BEGIN_QUOTE
+"No se utilizarán etiquetas para esta categoría ya que se utilizará para definir
+las columnas del tablero visual (Kanban) del flujo de trabajo"
+#+END_QUOTE
+* Método ManBand
+:PROPERTIES:
+:reveal_background: #123456
+:END:
+** Ya tenemos lo que necesitamos
+- Hemos definido y caracterizado lo que es una tarea
+- Hemos seleccionado un par reconocidas de metodologías:
+  - kanban (tarjetas y listas)
+  - GTD (flujo de trabajo)
+- Hemos creado una taxonomía (sistema de clasificación) de tareas
+#+REVEAL_HTML: <img class="stretch" src="assets/img/ManBand_build.jpg">
+** Selección de herramienta digital
+- Disponemos de muchas posibilidades:
+  - [[https://asana.com/][asana]]
+  - [[https://basecamp.com/][basecamp]]
+  - [[https://centrallo.com/][centrallo]]
+  - [[https://www.atlassian.com/es/software/jira][jira]]
+  - [[https://kanbanize.com/][kabanize]]
+  - [[https://monday.com/][monday.com]]
+  - [[https://niftypm.com/][nifty]]
+  - [[https://quire.io/][quire]]
+  - [[https://www.rememberthemilk.com/][remember the milk]]
+  - [[https://www.smartsheet.com/task-management][smartsheet]]
+  - [[https://www.taskworld.com][taskworld]]
+  - [[https://trello.com/][trello]]
+  - [[https://www.wunderlist.com/][wunderlist]]
+  - [[https://www.wrike.com][wrike]]
+  - [[https://www.zoho.com/projects/][zoho projects]]
+  - etc.
+** [[file:assets/img/logo-trello.png]]
+
+- Trello es muy conocido por su simplicidad, potencia visual y opción de uso sin coste.
+- Está basado en web por lo que tan solo necesitamos un navegador.
+- Dispone de app para móvil.
+- Presenta tableros con listas que contienen tarjetas.
+- Ofrece muchas posibilidades
+- Es muy adecuado para el método ManBand.
+** Diagrama de flujo ManBand
+#+REVEAL_HTML: <img class="stretch" src="assets/img/ManBand_workflow.jpg">
+** Listas
+- Por Hacer
+  - Algún día
+  - Recurrentes
+  - Entrada
+  - Próximas
+- En Proceso
+  - Hacer ahora
+  - Esperando a
+- Hecho
+  - Reciente
+  - Referencias
+*** Listas en Trello
+[[file:assets/img/ManBand_Menu_Trello.png]]
+[[file:assets/img/Listas_Por_Hacer.png]]
+[[file:assets/img/Listas_En_Proceso.png]]
+[[file:assets/img/Listas_Hecho.png]]
+** Taxonomía
+- =prioridad=
+  - =prioridad_baja=
+  - =prioridad_media=
+  - =prioridad_alta=
+- =asunto=
+  - =asunto_hogar=
+  - =asunto_hijos=
+  - =asunto_salud=
+  - =asunto_hobby=
+- =acción=
+  - =acción_comprar=
+  - =acción_recoger=
+  - =acción_escribir=
+  - =acción_leer=
+#+REVEAL: split
+- =localización=
+  - =localización_colegio=
+  - =localización_carrefour_alameda=
+  - =localización_farmacia_de_la_esquina=
+- =persona=
+  - =persona_juan_pérez=
+  - =persona_mi_padre=
+- =organización=
+  - =organización_yoigo=
+  - =organización_asociación_vecinal_bloque_a=
+*** Taxonomía en Trello
+[[file:assets/img/ManBand_Etiquetas_Trello.png]]
+** Detalle de tarea en Trello
+#+REVEAL_HTML: <img class="stretch" src="assets/img/Detalle_tarea_Trello.png">
+** Detalle de listas en Trello
+[[file:assets/img/Listas_Por_Hacer_Ejemplo.png]]
+[[file:assets/img/Listas_En_Proceso_Ejemplo.png]]
+[[file:assets/img/Listas_Hecho_Ejemplo.png]]
+** Tablero en Trello
+#+REVEAL_HTML: <img class="stretch" src="assets/img/ManBand_Tablero_Ejemplo1_Trello.png">
+** Búsquedas
+#+BEGIN_QUOTE
+Lo habitual será que en nuestro tablero tengamos decenas de tareas
+#+END_QUOTE
+- Podemos buscar y filtrar gracias al sistema de clasificación de etiquetas:
+  - =board:"Personal"= selección del tablero en el que buscar
+  - =is:open= selección de tareas activas (no archivadas)
+  - =-LABELS #priority-high= filtro de etiquetas
+** Ejemplo de búsqueda
+- Lista de la compra:
+# #+REVEAL_HTML: <img class="stretch" src="assets/img/search_comprar.png">
+[[file:assets/img/search_comprar.png]]
+* Miscelánea
+:PROPERTIES:
+:reveal_background: #123456
+:END:
+** Gestionar más de un tablero
+- Un tablero, junto con el sistema de clasificación, debe ser suficiente para
+  una gestión de tareas eficiente.
+- A veces, en un tablero, predominan tareas que tienen que ver con un asunto
+  concreto como por ejemplo: =asunto_trabajo=
+- En ese caso se puede crear un tablero para las tareas que son de un
+  determinado asunto.
+- No obstante hay que tratar de evitar esta situación.
+
+** Gestión de proyectos
+#+BEGIN_QUOTE
+Si las tareas presentan una relación de dependencia y entre todas persiguen un
+objetivo común nos encontramos ante un proyecto.
+#+END_QUOTE
+- El método ManBand se puede extender añadiendo técnicas para gestionar el tiempo y
+  las dependencias.
+- Hay que aplicar metodologías basadas en representaciones Gantt, Pert, CPM y
+  otras.
+- La visualización en la gestión de proyectos es importante por lo que la
+  herramienta debe ser visualmente potente: [[https://asana.com/][asana]], [[https://www.atlassian.com/es/software/jira][jira]] (software) y otras.
+
+** Evitar la procrastinación: la técnica del pomodoro
+*** Procrastinación, postergación o posposición
+#+BEGIN_QUOTE
+Hábito de retrasar actividades o situaciones que deben atenderse,
+sustituyéndolas por otras situaciones más irrelevantes o agradables.
+#+END_QUOTE
+[[file:assets/img/ahora_m%C3%A1s_tarde.jpg]]
+
+*** Técnica del pomodoro
+#+REVEAL_HTML: <img style="background:none; border:none; box-shadow:none;" src="assets/img/reloj_pomodoro.png">
+#+BEGIN_QUOTE
+La Técnica Pomodoro fue desarrollada por Francesco Cirillo a finales de la
+década de los 80, y es un sistema que busca mejorar la administración del tiempo
+a través de su división en fragmentos.
+#+END_QUOTE
+
+*** Ciclo pomodoro
+- Selecciona la siguiente tarea: =Por Hacer (Próximas)=
+- Dedica 25 minutos a la tarea
+- Descansa 5 minutos
+- Repite el ciclo 4 veces y descansa durante 30 minutos
+
+#+REVEAL_HTML: <img style="background:none; border:none; box-shadow:none;" src="assets/img/tecnica-pomodoro.png">
+
+** Realización de más de una tarea al mismo tiempo
+- La multitarea real en el cerebro un humano no existe más allá de las funciones
+  vitales.
+- Podemos pensar en una tarea a la vez.
+- El problema surge porque el cambio de una tarea a otra exige un cambio de
+  contexto.
+- Actualmente hay un cierto consenso en que nuestro cerebro es capaz de
+  gestionar con cierta comodidad 2 tareas al mismo tiempo (con su cambio de
+  contexto).
+- En cualquier caso la multitarea aumenta el nivel de estrés y disminuye el
+  rendimiento facilitando la aparición de errores.
+
+** Trabajadores del conocimiento                                   :noexport:
+- Son aquellos trabajadores cuyo principal capital es el **conocimiento**.
+  Ejemplos representativos son los trabajadores de las TI, periodistas,
+  ingenieros, científicos, médicos, economistas, etc.
+- Se diferencian de otros trabajadores que se dedican fundamentalmente a
+  **resolver problemas no rutinarios** que requieren una combinación de
+  pensamiento convergente, divergente y creativo.:
+  - El pensamiento **divergente** es un proceso de pensamiento de generar ideas
+    creativas mediante la exploración de muchas posibles soluciones.
+  - El pensamiento **convergente** representa la habilidad de dar la respuesta
+    "correcta" a preguntas estandarizadas que no requieren significativamente de
+    creatividad.
+  - El pensamiento **creativo** consiste en el desarrollo de nuevas ideas y
+    conceptos. Se trata de la habilidad de formar nuevas combinaciones de ideas
+    para llenar una necesidad.
+- La naturaleza creativa de los trabajadores del conocimiento hacen que generen
+  continuamente multiples iniciativas que se acaban convirtiendo en tareas
+  realizables en su mayoría.
+
+* Muchas gracias
+#+BEGIN_QUOTE
+"Recuerda que lo importante es el *ćomo*"
+#+END_QUOTE
+
+- Web: http://goyoambrosio.com
+- linkedin: [[https://www.linkedin.com/in/goyoambrosio/]]
+
+Realizado con [[https://www.gnu.org/software/emacs/][Emacs]] + [[https://github.com/yjwen/org-reveal][org-reveal]] + [[https://revealjs.com][Reveal.js]] por Gregorio Ambrosio (Goyo AC)
+
+
+
+

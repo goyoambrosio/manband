@@ -1,0 +1,211 @@
+# -*- mode: org; coding: utf-8-unix; ispell-dictionary: "english"; org-hide-emphasis-markers: t; eval: (auto-fill-mode); eval: (fci-mode) -*-
+
+
+# #+BEGIN_abstract
+# This is the abstract
+# #+END_abstract
+
+
+* Header Information                                               :noexport:
+
+** Identification
+
+# [[https://orgmode.org/manual/Export-settings.html][Export settings]]
+#+TITLE: Cómo gestionar tareas cuando se es un hombre orquesta
+#+SUBTITLE: Conceptos, metodología y herramientas
+#+DESCRIPTION: Document description
+#+KEYWORDS: keywords separated by comma
+# Use keybind C-c . or C-c < or free format like "Saturday 9th, 2019"
+#+DATE:
+#+AUTHOR: Gregorio Ambrosio Cestero
+#+EMAIL: goyoac@gmail.com
+#+LANGUAGE: en
+
+** General settings
+
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.2.2 (Org mode 9.1.14)
+
+#+OPTIONS: ':nil *:t -:t ::t <:t H:6 \n:nil ^:t arch:headline author:t
+#+OPTIONS: broken-links:nil c:nil creator:nil d:(not "LOGBOOK") date:t e:t
+#+OPTIONS: email:t f:t inline:t num:t p:nil pri:nil prop:nil stat:t tags:t
+#+OPTIONS: tasks:t tex:t timestamp:t title:t toc:t todo:nil |:t
+
+# #+STARTUP: hidestars
+# #+STARTUP: hideblocks
+# #+STARTUP: nohideblocks
+#+STARTUP: overview
+#+STARTUP: indent
+#+STARTUP: logdrawer
+
+#+COLUMNS: %25ITEM %TAGS %TODO
+
+ Keywords for file-local settings. The keywords after the vertical bar (or the
+ last keyword if no bar is there) must always mean that the item is in its final
+ state. Use C-c C-c with the cursor still in the line to make the changes known
+ to Org mode
+ #+TODO: TODO(t) NEXT(n) STARTED(s!) WAITING(w@/!) SOMEDAY(o) PROJ(p)| DONE(d!) CANCELLED(c@)
+
+# TOC related
+# #+OPTIONS: toc:t          include all levels in TOC
+# #+OPTIONS: toc:2          only include two levels in TOC
+# #+OPTIONS: toc:nil        no default TOC at all
+
+# To move the TOC to a different location:
+# #+OPTIONS: toc:nil        no default TOC
+# ...
+# #+TOC: headlines 2        insert TOC here, with two headline levels
+
+# Use the TOC keyword to generate list of tables (resp. all listings) with captions.
+# #+TOC: listings           build a list of listings
+# #+TOC: tables             build a list of tables
+
+** Export settings
+*** ODT
+
+ # [[https://orgmode.org/manual/ODT-specific-export-settings.html][ODT specific export settings]]
+ # Style file application does not work fine for me. Apply with Load Style after
+ # file creation.
+ # #+ODT_STYLES_FILE: ~/cloud/Dropbox/DOCUMENTS/TEMPLATES/ODT/my_odt_template.odt
+ # [[https://orgmode.org/manual/ASCII_002fLatin_002d1_002fUTF_002d8-export.html#ASCII_002fLatin_002d1_002fUTF_002d8-export][ASCII specific export setting]] (also for ODT)
+ # #+DESCRIPTION and #+KEYWORDS are included as metadata in the aoutput file.
+
+
+ # Abstract does not work when export in ODT format. Use it for Latex
+ # #+BEGIN_ABSTRACT
+ # Abstract
+ # #+END_ABSTRACT
+ # #+TOC: headlines 2
+
+*** Code
+
+ # To avoid evaluating code on export use the following header argument:
+ #+PROPERTY: header-args :eval never-export
+
+*** Pandoc
+
+ #+BEGIN_COMMENT
+ # Useful commands
+ # Pandoc ignores some headers options (as PROPERTIES). Use export (C-c-e o o) instead.
+ cd ~/cloud/Dropbox/DOCUMENTS/TEMPLATES
+ pandoc this_file.org --reference-doc=/home/goyo/cloud/Dropbox/DOCUMENTS/TEMPLATES/DOCX/my_docx_template.docx -o this_file.docx
+ soffice --nologo --writer this_file.docx
+ #+END_COMMENT
+
+*** LaTeX
+
+# LaTeX specific export settings
+# ================================
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper]
+# #+LATEX_CLASS_OPTIONS: [garamond]
+# #+LATEX_HEADER: \usepackage{setspace}
+# #+LATEX_HEADER: \doublespacing
+#+LATEX_CLASS_OPTIONS: [12pt]
+#+LATEX_HEADER: \usepackage[innermargin=1in,outermargin=0.75in,vmargin=1.5cm]{geometry}
+#+LATEX_HEADER: \linespread{1.1}
+#+LATEX_HEADER: \usepackage{natbib}
+#+LATEX_HEADER: \usepackage[spanish]{babel}
+
+*** reveal.js
+
+#+REVEAL_INIT_OPTIONS: width:1600, height:1200, slideNumber:"c/t"
+#+OPTIONS: num:nil toc:nil ^:nil
+#+REVEAL_TRANS: fade
+#+REVEAL_THEME: league
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Hombre Orquesta">
+#+REVEAL_POSTAMBLE: <p> Created by gambrosio. </p>
+# #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.8.0
+#+REVEAL_ROOT: file:///home/goyo/cloud/GIT/reveal.js
+# #+OPTIONS: reveal_single_file:nil
+
+*** ox-ioslide
+
+#+COMPANY: Goyo AC
+#+WWW: http://goyoambrosio.com
+#+GITHUB: http://github.com/goyoambrosio
+#+TWITTER: gambrosio
+
+#+FAVICON: assets/img/goyologo.png
+#+ICON: assets/img/goyologo.png
+#+HASHTAG: gambrosio
+
+
+* Conceptos
+:PROPERTIES:
+:SLIDE:    segue dark quote
+:ASIDE:    right bottom
+:ARTICLE:  flexbox vleft auto-fadein
+:END:
+* Tareas
+:PROPERTIES:
+:ARTICLE:  smaller
+:END:
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+  Enter speaker notes here (ioslide)
+#+END_QUOTE
+
+#+BEGIN_NOTES
+  Enter speaker notes here (reveal)
+#+END_NOTES
+
+- Se denomina tarea a la realización de un determinado trabajo o actividad que
+  se lleva a cabo en un **tiempo limitado**.
+- Las tareas requieren **tiempo y esfuerzo** por lo que deben desempeñarse con el
+  máximo nivel de eficiencia posible.
+- Principalmente, según su origen se clasifican en **voluntarias e impuestas**.
+- Otro citerio de clasificación inportante es según su programación pudiendo ser
+  **planificadas o no planificadas**.
+- Según quien las realice, las tareas pueden se realizadas **por uno mismo,
+  delegadas o diferidas**.
+- Además se pueden clasificar por otros criterios como: *prioridades, contexto,
+  personas y agentes relacionados, localización, tipo actividad, individual o en
+  equipo*, etc.
+- Las tareas se pueden dividir en otras subtareas, siempre menos complejas. En
+  procesos complejos las tareas se organizan en **proyectos** en donde se
+  establecen relaciones de dependencia entre ellas mismas y entre ellas y sus
+  responsables.
+
+
+
+
+** Gestión de tareas
+:PROPERTIES:
+:reveal_background: #123456
+:END:
+
+No debemos confundir gestión de tareas con gestión de proyectos
+
+* Trabajadores del conocimiento
+- Son aquellos trabajadores cuyo principal capital es el **conocimiento**. Ejemplos representativos son los trabajadores de las TI, periodistas, ingenieros, científicos, médicos, economistas, etc.
+- Se diferencian de otros trabajadores que se dedican fundamentalmente a **resolver problemas no rutinarios** que requieren una combinación de pensamiento convergente, divergente y creativo.:
+  - El pensamiento **divergente** es un proceso de pensamiento de generar ideas creativas mediante la exploración de muchas posibles soluciones.
+  - El pensamiento **convergente** representa la habilidad de dar la respuesta "correcta" a preguntas estandarizadas que no requieren significativamente de creatividad.
+  - El pensamiento **creativo** consiste en el desarrollo de nuevas ideas y conceptos. Se trata de la habilidad de formar nuevas combinaciones de ideas para llenar una necesidad.
+- La naturaleza creativa de los trabajadores del conocimiento hacen que generen continuamente multiples iniciativas que se acaban convirtiendo en tareas realizables en su mayoría.
+
+* Stress por retención de tareas a realizar
+
+* Proyectos
+
+* Herramientas
+- Trello, Remember the Milk
+- Google Calendar
+- Xmind (Mind Maps)
+- Zapier
+
+* Metodologías
+- Método Kaban
+- Getting Things Done (GTD)
+
+* Contacto
+- Web: http://goyoambrosio.com
+
+* Muchas gracias
+:PROPERTIES:
+:SLIDE: thank-you-slide segue
+:ASIDE: right
+:ARTICLE: flexbox vleft auto-fadein
+:END:

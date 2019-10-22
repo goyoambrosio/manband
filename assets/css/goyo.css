@@ -111,3 +111,9 @@ slides.layout-widescreen > slide.backdrop{
   color: whitesmoke ;  /* ; #EF5150*/
 }
 
+.reveal .slides .slide-footer {
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+}
