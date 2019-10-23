@@ -11,8 +11,8 @@
 ** Identification
 
 # [[https://orgmode.org/manual/Export-settings.html][Export settings]]
-#+TITLE: Gestión de tareas como hombre orquesta
-#+SUBTITLE: Método ManBand
+#+TITLE: Método ManBand
+#+SUBTITLE: Cómo gestionar tareas cuando te sientes como un hombre orquesta
 #+DESCRIPTION: Gestión de tareas a partir de metodologías GTD, kanban, una taxonomía y trello como aplicación.
 #+KEYWORDS: keywords separated by comma
 # Use keybind C-c . or C-c < or free format like "Saturday 9th, 2019"
@@ -115,13 +115,13 @@
 #+REVEAL_TRANS: fade
 #+REVEAL_THEME: moon
 #+REVEAL_HEAD_PREAMBLE: <meta name="Gestión de tareas con metodología GTD, kanban, una ontología y Trello como aplicación" content="Gestión de tareas">
-#+REVEAL_POSTAMBLE: <p> Created by Gregorio Ambrosio. </p>
+#+REVEAL_POSTAMBLE: <p> Created by Gregorio Ambrosio Cestero </p>
 #+REVEAL_HLEVEL: 1
 # #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.8.0
 #+REVEAL_ROOT: ./reveal.js
 #+OPTIONS: reveal_single_file:nil
 #+REVEAL_EXTRA_CSS: ./assets/css/goyo.css
-#+REVEAL_SLIDE_FOOTER: <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Gregorio Ambrosio </p>
+#+REVEAL_SLIDE_FOOTER: <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Gregorio Ambrosio Cestero</p>
 *** ioslide
 
 #+COMPANY: Goyo AC
@@ -139,11 +139,44 @@
 - Cada columna contiene las diapositivas de una sección.
 - La navegación entre secciones se hace horizontalmente.
 - La navegación dentro de la sección se hace verticalmente.
-#+REVEAL_HTML: <img class="stretch" src="assets/img/matriz_de_diapositivas.png">
+#+REVEAL_HTML: <img class="stretch" src="assets/img/matriz.gif">
 * Introducción
 :PROPERTIES:
 :reveal_background: #123456
 :END:
+#+BEGIN_NOTES
+Es nuestra actividad habitual nos encontramos gestionando un gran número de
+tareas de naturaleza muy diferente. Esta situación genera un gran estrés por lo
+que se hace necesaria una forma de gestión que nos ayude disminuir este estrés
+afrontando eficientemente el desempeño de las tareas.
+
+Existen numerosas metodologías que han demostrado su efectividad en la gestión
+de tareas, así como multitud de herramientas de bajo o ningún coste que
+habitualmente se sitúan en la nube.
+
+Precisamente por esta oferta tan abundante, es complicado definir un marco
+concreto y único que nos ayude a la gestión de tareas sin que tengamos que
+emplear mucho tiempo en el propio aprendizaje y uso de estas metodologías y
+herramientas.
+
+En mi caso, llevo enfrentándome a esta problemática desde hace años, tanto en el
+ámbito personal como en el profesional. Durante todos estos años he ido
+adaptando metodologías y herramientas a mis necesidades que, por otro lado, son
+las mismas para otros muchos.
+
+En concreto, he desarrollado un sencillo método basado en conceptos y
+metodologías existentes, como GTD y kanban, que he puesto en práctica sobre
+varias herramientas como wunderlust, rememberthemilk, trello y Emacs (org).
+
+A este método lo he denominado *manband* u *hombre orquesta* ya que es la principal
+sensación que siento cuando me enfrento a la realización de múltiples acciones
+que nada tienen entre sí. Gestionar todas esas tareas es como tocar varios
+instrumentos a la vez.
+
+Lo cierto es que llevo utilizando este método desde hace muchos años y me ha
+servido, y me sirve, para gestionar eficientemente situaciones con muchas tareas
+tanto en el ámbito personal como en el profesional.
+#+END_NOTES
 ** ¿Qué pretendemos en esta presentación? 
 
 #+BEGIN_QUOTE
@@ -680,15 +713,27 @@ a través de su división en fragmentos.
   realizables en su mayoría.
 
 * Muchas gracias
+# #+REVEAL_HTML: <script type="text/javascript">
+# #+REVEAL_HTML: function myribbon(){
+# #+REVEAL_HTML: 	var mlink=document.createElement('a');
+# #+REVEAL_HTML: 	mlink.setAttribute("href","https://github.com/goyoambrosio/manband");
+# #+REVEAL_HTML: 	mlink.setAttribute("style","    position: absolute; top: 0; right: 0; z-index: 1000;");
+# #+REVEAL_HTML: 	mlink.innerHTML='<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">';
+# #+REVEAL_HTML: 	document.body.insertBefore(mlink, document.body.childNodes[0]);
+# #+REVEAL_HTML: }
+# #+REVEAL_HTML: </script>
+# #+REVEAL_HTML: <script>myribbon();</script>
 #+BEGIN_QUOTE
 "Recuerda que lo importante es el *ćomo*"
 #+END_QUOTE
 
 - Web: http://goyoambrosio.com
 - LinkedIn: [[https://www.linkedin.com/in/goyoambrosio/]]
+- GitHub: https://github.com/goyoambrosio/manband
 
-Realizado con [[https://www.gnu.org/software/emacs/][Emacs]] + [[https://github.com/yjwen/org-reveal][org-reveal]] + [[https://revealjs.com][Reveal.js]] por Gregorio Ambrosio (Goyo AC)
+Realizado con [[https://www.gnu.org/software/emacs/][Emacs]] + [[https://orgmode.org/][org]] + [[https://github.com/yjwen/org-reveal][org-reveal]] + [[https://revealjs.com][Reveal.js]] 
 
-- Puedes volver a consultar esta presentación en http://goyoambrosio.com/manband
+por Gregorio Ambrosio Cestero (Goyo AC)
+
 
 
