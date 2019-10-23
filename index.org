@@ -599,7 +599,7 @@ las columnas del tablero visual (Kanban) del flujo de trabajo"
   - =acción_recoger=
   - =acción_escribir=
   - =acción_leer=
-#+REVEAL: split
+#+REVEAL: split:t
 - =localización=
   - =localización_colegio=
   - =localización_carrefour_alameda=
