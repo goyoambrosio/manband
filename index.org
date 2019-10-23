@@ -132,7 +132,14 @@
 #+FAVICON: assets/img/goyologo_circle.png
 #+ICON: assets/img/goyologo_circle.png
 #+HASHTAG: gambrosio
-
+* Organización de la presentación
+- Las diapositivas de esta presentación se encuentran dispuestas en filas y
+  columnas.
+- La fila superior contiene las diapositivas con las cabeceras de las secciones.
+- Cada columna contiene las diapositivas de una sección.
+- La navegación entre secciones se hace horizontalmente.
+- La navegación dentro de la sección se hace verticalmente.
+#+REVEAL_HTML: <img class="stretch" src="assets/img/matriz_de_diapositivas.png">
 * Introducción
 :PROPERTIES:
 :reveal_background: #123456
