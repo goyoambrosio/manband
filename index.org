@@ -14,7 +14,7 @@
 #+TITLE: Método ManBand
 #+SUBTITLE: Cómo gestionar tareas cuando te sientes como un hombre orquesta
 #+DESCRIPTION: Gestión de tareas a partir de metodologías GTD, kanban, una taxonomía y trello como aplicación.
-#+KEYWORDS: keywords separated by comma
+#+KEYWORDS: gestión, tareas, task, management, manband, hombre, orquesta, gtd, kanban, taxonomía, getting, things, done
 # Use keybind C-c . or C-c < or free format like "Saturday 9th, 2019"
 #+DATE:
 #+AUTHOR: Gregorio Ambrosio Cestero
@@ -121,7 +121,7 @@
 #+REVEAL_ROOT: ./reveal.js
 #+OPTIONS: reveal_single_file:nil
 #+REVEAL_EXTRA_CSS: ./assets/css/goyo.css
-#+REVEAL_SLIDE_FOOTER: <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>  2019 Gregorio Ambrosio Cestero</p>
+#+REVEAL_SLIDE_FOOTER: <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" align="middle" src="./assets/img/license.png" /></a>  2019 Gregorio Ambrosio Cestero</p>
 *** ioslide
 
 #+COMPANY: Goyo AC
