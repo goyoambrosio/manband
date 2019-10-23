@@ -23,7 +23,7 @@ las mismas para otros muchos.
 
 En concreto, he desarrollado un sencillo método basado en conceptos y
 metodologías existentes, como GTD y kanban, que he puesto en práctica sobre
-varias herramientas como wunderlust, rememberthemilk, trello y Emacs (org).
+varias herramientas como [[https://www.wunderlist.com/][wunderlist]], [[https://www.rememberthemilk.com/][rememberthemilk]], [[https://trello.com/][trello]] y [[https://www.gnu.org/software/emacs/][Emacs]] ([[https://orgmode.org/][org]]).
 
 A este método lo he denominado *manband* u *hombre orquesta* ya que es la principal
 sensación que siento cuando me enfrento a la realización de múltiples acciones
